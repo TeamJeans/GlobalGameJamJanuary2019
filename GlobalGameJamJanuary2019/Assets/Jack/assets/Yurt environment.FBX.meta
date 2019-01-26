@@ -1,0 +1,390 @@
+fileFormatVersion: 2
+guid: 298043830ac68d94795830abf0e419ee
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Box003
+    100006: Box004
+    100008: Box005
+    100010: Box006
+    100012: Box007
+    100014: Box008
+    100016: Box009
+    100018: Box010
+    100020: Box011
+    100022: Box014
+    100024: Box015
+    100026: Box016
+    100028: Box017
+    100030: Box018
+    100032: Box019
+    100034: Box020
+    100036: Box021
+    100038: Box022
+    100040: Box023
+    100042: Box024
+    100044: Box025
+    100046: Box026
+    100048: Camera001
+    100050: Cylinder001
+    100052: Cylinder005
+    100054: Cylinder006
+    100056: Cylinder007
+    100058: Cylinder008
+    100060: Cylinder009
+    100062: Cylinder010
+    100064: Cylinder011
+    100066: Cylinder012
+    100068: Cylinder013
+    100070: Cylinder014
+    100072: Cylinder015
+    100074: Cylinder016
+    100076: Cylinder017
+    100078: Cylinder018
+    100080: Cylinder019
+    100082: meat+stick
+    100084: Object
+    100086: Plane001
+    100088: Plane002
+    100090: Plane003
+    100092: Plane004
+    100094: Plane005
+    100096: Plane006
+    100098: Plane007
+    100100: Plane008
+    100102: Plane009
+    100104: Pyramid001
+    100106: qBox007
+    100108: Sphere001
+    100110: support braces
+    100112: support braces001
+    100114: //RootNode
+    400000: Box001
+    400002: Box002
+    400004: Box003
+    400006: Box004
+    400008: Box005
+    400010: Box006
+    400012: Box007
+    400014: Box008
+    400016: Box009
+    400018: Box010
+    400020: Box011
+    400022: Box014
+    400024: Box015
+    400026: Box016
+    400028: Box017
+    400030: Box018
+    400032: Box019
+    400034: Box020
+    400036: Box021
+    400038: Box022
+    400040: Box023
+    400042: Box024
+    400044: Box025
+    400046: Box026
+    400048: Camera001
+    400050: Cylinder001
+    400052: Cylinder005
+    400054: Cylinder006
+    400056: Cylinder007
+    400058: Cylinder008
+    400060: Cylinder009
+    400062: Cylinder010
+    400064: Cylinder011
+    400066: Cylinder012
+    400068: Cylinder013
+    400070: Cylinder014
+    400072: Cylinder015
+    400074: Cylinder016
+    400076: Cylinder017
+    400078: Cylinder018
+    400080: Cylinder019
+    400082: meat+stick
+    400084: Object
+    400086: Plane001
+    400088: Plane002
+    400090: Plane003
+    400092: Plane004
+    400094: Plane005
+    400096: Plane006
+    400098: Plane007
+    400100: Plane008
+    400102: Plane009
+    400104: Pyramid001
+    400106: qBox007
+    400108: Sphere001
+    400110: support braces
+    400112: support braces001
+    400114: //RootNode
+    2000000: Camera001
+    2100000: 'Material #55'
+    2100002: 02 - Default
+    2100004: No Name
+    2100006: 'Material #57'
+    2100008: 'Material #26'
+    2100010: 'Material #54'
+    2100012: 'Material #53'
+    2100014: 'Material #27'
+    2100016: 'Material #59'
+    2100018: 'Material #60'
+    2100020: 'Material #58'
+    2100022: 'Material #29'
+    2100024: 'Material #50'
+    2100026: 'Material #49'
+    2100028: 'Material #52'
+    2100030: 'Material #51'
+    2100032: 'Material #56'
+    2100034: 'Material #61'
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Box004
+    2300008: Box005
+    2300010: Box006
+    2300012: Box007
+    2300014: Box008
+    2300016: Box009
+    2300018: Box010
+    2300020: Box011
+    2300022: Box014
+    2300024: Box015
+    2300026: Box016
+    2300028: Box017
+    2300030: Box018
+    2300032: Box019
+    2300034: Box020
+    2300036: Box021
+    2300038: Box022
+    2300040: Box023
+    2300042: Box024
+    2300044: Box025
+    2300046: Box026
+    2300048: Cylinder001
+    2300050: Cylinder005
+    2300052: Cylinder006
+    2300054: Cylinder007
+    2300056: Cylinder008
+    2300058: Cylinder009
+    2300060: Cylinder010
+    2300062: Cylinder011
+    2300064: Cylinder012
+    2300066: Cylinder013
+    2300068: Cylinder014
+    2300070: Cylinder015
+    2300072: Cylinder016
+    2300074: Cylinder017
+    2300076: Cylinder018
+    2300078: Cylinder019
+    2300080: Object
+    2300082: Plane001
+    2300084: Plane002
+    2300086: Plane003
+    2300088: Plane004
+    2300090: Plane005
+    2300092: Plane006
+    2300094: Plane007
+    2300096: Plane008
+    2300098: Plane009
+    2300100: Pyramid001
+    2300102: qBox007
+    2300104: Sphere001
+    2300106: support braces
+    2300108: support braces001
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Box004
+    3300008: Box005
+    3300010: Box006
+    3300012: Box007
+    3300014: Box008
+    3300016: Box009
+    3300018: Box010
+    3300020: Box011
+    3300022: Box014
+    3300024: Box015
+    3300026: Box016
+    3300028: Box017
+    3300030: Box018
+    3300032: Box019
+    3300034: Box020
+    3300036: Box021
+    3300038: Box022
+    3300040: Box023
+    3300042: Box024
+    3300044: Box025
+    3300046: Box026
+    3300048: Cylinder001
+    3300050: Cylinder005
+    3300052: Cylinder006
+    3300054: Cylinder007
+    3300056: Cylinder008
+    3300058: Cylinder009
+    3300060: Cylinder010
+    3300062: Cylinder011
+    3300064: Cylinder012
+    3300066: Cylinder013
+    3300068: Cylinder014
+    3300070: Cylinder015
+    3300072: Cylinder016
+    3300074: Cylinder017
+    3300076: Cylinder018
+    3300078: Cylinder019
+    3300080: Object
+    3300082: Plane001
+    3300084: Plane002
+    3300086: Plane003
+    3300088: Plane004
+    3300090: Plane005
+    3300092: Plane006
+    3300094: Plane007
+    3300096: Plane008
+    3300098: Plane009
+    3300100: Pyramid001
+    3300102: qBox007
+    3300104: Sphere001
+    3300106: support braces
+    3300108: support braces001
+    4300000: Cylinder001
+    4300002: support braces
+    4300004: Pyramid001
+    4300006: Box004
+    4300008: Plane001
+    4300010: Object
+    4300012: Plane003
+    4300014: Plane004
+    4300016: support braces001
+    4300018: Box007
+    4300020: Cylinder012
+    4300022: Box008
+    4300024: Plane005
+    4300026: Box010
+    4300028: Box011
+    4300030: Box014
+    4300032: Plane007
+    4300034: Plane006
+    4300036: Box009
+    4300038: Plane002
+    4300040: Box002
+    4300042: Box006
+    4300044: qBox007
+    4300046: Cylinder005
+    4300048: Box005
+    4300050: Cylinder006
+    4300052: Cylinder007
+    4300054: Cylinder008
+    4300056: Cylinder009
+    4300058: Cylinder010
+    4300060: Cylinder011
+    4300062: Box003
+    4300064: Box001
+    4300066: Plane008
+    4300068: Box015
+    4300070: Box016
+    4300072: Box017
+    4300074: Box018
+    4300076: Cylinder013
+    4300078: Cylinder014
+    4300080: Cylinder015
+    4300082: Cylinder016
+    4300084: Box019
+    4300086: Box020
+    4300088: Cylinder017
+    4300090: Cylinder018
+    4300092: Cylinder019
+    4300094: Box021
+    4300096: Box022
+    4300098: Sphere001
+    4300100: Plane009
+    4300102: Box023
+    4300104: Box024
+    4300106: Box025
+    4300108: Box026
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

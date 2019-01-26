@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MeatCooking : MonoBehaviour {
-
-    //an empty object in the middle of all the meat that controls their joint rotation
-    public GameObject bigMeat;
-
     //the small sections of meat which together make up the entire meat
     public GameObject meatSection1;
     public GameObject meatSection2;
@@ -20,6 +16,7 @@ public class MeatCooking : MonoBehaviour {
 
     //cooking level of each section
     float[] cooking = new float[4];
+    public float cookedLevel { get { return cooking[0] + cooking[1] + cooking[2] + cooking[3]; } }
 
     void Update()
     {
@@ -29,7 +26,7 @@ public class MeatCooking : MonoBehaviour {
             transform.Rotate(Input.GetAxis("ProControllerRightJoystickHorizontal") * 50 * Time.deltaTime, 0, 0);
             rotate += Input.GetAxis("ProControllerRightJoystickHorizontal") * Time.deltaTime;
         }
-        Debug.Log("rotation" + rotate);
+        //Debug.Log("rotation" + rotate);
 
         if (rotate < 0.0f) rotate = 7.1f;
         if (rotate > 7.1f) rotate = 0.0f;
@@ -39,10 +36,11 @@ public class MeatCooking : MonoBehaviour {
         if (rotate >= 3.5f && rotate < 5.3f) cooking[3] += 0.1f * Time.deltaTime;
         if (rotate >= 5.3f && rotate <= 7.1) cooking[0] += 0.1f * Time.deltaTime;
 
-        Debug.Log("1: " + cooking[0]);
-        Debug.Log("2: " + cooking[1]);
-        Debug.Log("3: " + cooking[2]);
-        Debug.Log("4: " + cooking[3]);
+
+        //Debug.Log("1: " + cooking[0]);
+        //Debug.Log("2: " + cooking[1]);
+        //Debug.Log("3: " + cooking[2]);
+        //Debug.Log("4: " + cooking[3]);
 
 
         //change material colour
