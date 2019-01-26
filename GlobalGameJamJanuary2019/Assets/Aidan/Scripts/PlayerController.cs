@@ -10,15 +10,15 @@ public class PlayerController : MonoBehaviour {
 	float jumpForce;
 	[SerializeField]
 	float gravityScale;
-	[SerializeField]
-	Animator anim;
+	//[SerializeField]
+	//Animator anim;
 	[SerializeField]
 	Transform pivot;
 	[SerializeField]
 	float rotateSpeed;
-	[SerializeField]
-	GameObject playerModel;
-	float knockBackCounter;
+	//[SerializeField]
+	//GameObject playerModel;
+	float knockBackCounter = 0;
 
 	CharacterController controller;
 	Vector3 moveDir;
@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour {
 			if (controller.isGrounded)
 			{
 				moveDir.y = 0;
-				if (Input.GetButtonDown("Jump"))
+				if (Input.GetButtonDown("ProControllerX"))
 				{
 					moveDir.y = jumpForce;
 				}
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour {
 		{
 			transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y,0f);
 			Quaternion newRotation = Quaternion.LookRotation(new Vector3(moveDir.x, 0f, moveDir.z));
-			playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
+			//playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
 		}
 
 		// Animation variables
@@ -118,8 +118,6 @@ public class PlayerController : MonoBehaviour {
 		{
 			pushColliderTimeCounter -= Time.deltaTime;
 		}
-		anim.SetBool("isGrounded", controller.isGrounded);
-		anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical"))) + (Mathf.Abs(Input.GetAxis("Horizontal"))));
 	}
 
 	public void knockBack(Vector3 knockBackDir, float knockBackForce, float knockBackTime)

@@ -38,14 +38,14 @@ public class ThirdPersonCamera : MonoBehaviour {
 
 	void Update()
 	{
-		currentX += Input.GetAxis("RightJoystickHorizontal") * sensitivityX;
+		currentX += Input.GetAxis("ProControllerRightJoystickHorizontal") * sensitivityX;
 		if (invertY)
 		{
-			currentY += Input.GetAxis("RightJoystickVertical") * sensitivityY;
+			currentY += Input.GetAxis("ProControllerRightJoystickVertical") * sensitivityY;
 		}
 		else
 		{
-			currentY -= Input.GetAxis("RightJoystickVertical") * sensitivityY;
+			currentY -= Input.GetAxis("ProControllerRightJoystickVertical") * sensitivityY;
 		}
 
 		currentY = Mathf.Clamp(currentY, minViewAngle, maxViewAngle);
