@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController2 : MonoBehaviour {
 
 	[SerializeField]
 	float moveSpeed;
@@ -35,22 +35,23 @@ public class PlayerController : MonoBehaviour {
 	float pushColliderActiveTime = 5.0f;
 	float pushColliderTimeCounter = 0f;
 
+
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
 		controller = GetComponent<CharacterController>();
 		pullCollider.enabled = false;
 		pushCollider.enabled = false;
 	}
-	
+
 	// Update is called once per frame
-	void Update ()
+	void Update()
 	{
 		if (knockBackCounter <= 0)
 		{
 			// Calculate the direction the player is moving in
 			float yStore = moveDir.y;
-			moveDir = (transform.forward * Input.GetAxis("Vertical") * moveSpeed) + (transform.right * Input.GetAxis("Horizontal") * moveSpeed);
+			moveDir = (transform.forward * Input.GetAxis("ProControllerRightJoystickVertical") * moveSpeed) + (transform.right * Input.GetAxis("ProControllerRightJoystickHorizontal") * moveSpeed);
 			moveDir = moveDir.normalized * moveSpeed;
 			moveDir.y = yStore;
 
@@ -76,9 +77,9 @@ public class PlayerController : MonoBehaviour {
 		controller.Move(moveDir * Time.deltaTime);
 
 		// Move the player in different directions depending on the camera's look direction
-		if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
+		if (Input.GetAxis("ProControllerRightJoystickHorizontal") != 0 || Input.GetAxis("ProControllerRightJoystickVertical") != 0)
 		{
-			transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y,0f);
+			transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y, 0f);
 			Quaternion newRotation = Quaternion.LookRotation(new Vector3(moveDir.x, 0f, moveDir.z));
 			//playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
 		}
@@ -88,9 +89,9 @@ public class PlayerController : MonoBehaviour {
 		//anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical"))) + (Mathf.Abs(Input.GetAxis("Horizontal"))));
 
 		// Using the pull mechanic
-		if (Input.GetButtonDown("ProControllerZL"))
+		if (Input.GetButtonDown("ProControllerZR"))
 		{
-			Debug.Log("ZL Pressed!");
+			Debug.Log("ZR Pressed!");
 			activatePullCommand();
 		}
 
@@ -104,9 +105,9 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		// Using the push mechanic
-		if (Input.GetButtonDown("ProControllerL"))
+		if (Input.GetButtonDown("ProControllerR"))
 		{
-			Debug.Log("L Pressed!");
+			Debug.Log("R Pressed!");
 			activatePushCommand();
 		}
 

@@ -22,17 +22,18 @@ public class ThirdPersonCamera : MonoBehaviour {
 	[SerializeField]
 	bool stationaryCamera;
 
+	[SerializeField]
 	Camera cam;
 
 	[SerializeField]
 	Vector3 offset;
+	public Vector3 Offset { get { return offset; } set { offset = value; } }
 
 	float currentX = 0f;
 	float currentY = 0f;
 
 	void Start()
 	{
-		cam = Camera.main;
 	}
 
 	void Update()
@@ -55,18 +56,18 @@ public class ThirdPersonCamera : MonoBehaviour {
 		Quaternion rotation = Quaternion.Euler(currentY, currentX, 0f);
 		if (!stationaryCamera)
 		{
-			transform.position = target.position + rotation * offset;
+			cam.gameObject.transform.position = target.position + rotation * offset;
 		}
 		else
 		{
-			transform.position = target.position + offset;
+			cam.gameObject.transform.position = target.position + offset;
 		}
 
-		if (transform.position.y < target.position.y - .5f)
+		if (cam.gameObject.transform.position.y < target.position.y - .5f)
 		{
-			transform.position = new Vector3(transform.position.x, target.position.y - .5f, transform.position.z);
+			cam.gameObject.transform.position = new Vector3(cam.gameObject.transform.position.x, target.position.y - .5f, cam.gameObject.transform.position.z);
 		}
 
-		transform.LookAt(target.position);
+		cam.gameObject.transform.LookAt(target.position);
 	}
 }
