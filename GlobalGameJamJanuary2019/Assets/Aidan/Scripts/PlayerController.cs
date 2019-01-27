@@ -10,14 +10,14 @@ public class PlayerController : MonoBehaviour {
 	float jumpForce;
 	[SerializeField]
 	float gravityScale;
-	//[SerializeField]
-	//Animator anim;
+	[SerializeField]
+	Animator anim;
 	[SerializeField]
 	Transform pivot;
 	[SerializeField]
 	float rotateSpeed;
-	//[SerializeField]
-	//GameObject playerModel;
+	[SerializeField]
+	GameObject playerModel;
 	float knockBackCounter = 0;
 
 	CharacterController controller;
@@ -79,13 +79,13 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
 		{
 			transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y,0f);
-			Quaternion newRotation = Quaternion.LookRotation(new Vector3(moveDir.x, 0f, moveDir.z));
-			//playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
+			Quaternion newRotation = Quaternion.LookRotation(new Vector3(-moveDir.x, 0f, -moveDir.z));
+			playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
 		}
 
 		// Animation variables
 		//anim.SetBool("isGrounded", controller.isGrounded);
-		//anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical"))) + (Mathf.Abs(Input.GetAxis("Horizontal"))));
+		anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical"))) + (Mathf.Abs(Input.GetAxis("Horizontal"))));
 
 		// Using the pull mechanic
 		if (Input.GetButtonDown("ProControllerZL"))

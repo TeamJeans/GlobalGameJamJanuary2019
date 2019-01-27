@@ -23,6 +23,7 @@ public class FinishLineTrigger : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Yak")
 		{
+			Debug.Log("Cow has been added!");
 			other.gameObject.GetComponent<YakMovement>().Target = endFollowObject;
 			gm.CurrentNoOfYaks++;
 		}
