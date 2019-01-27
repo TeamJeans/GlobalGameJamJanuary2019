@@ -6,6 +6,7 @@ using TMPro;
 [System.Serializable]
 public class Dialogue : MonoBehaviour
 {
+    
     public GameObject bigMeat;
     public TextMeshProUGUI textDisplay;
 
@@ -57,9 +58,10 @@ public class Dialogue : MonoBehaviour
 
     void Start()
     {
+       
         endScene = false;
         chatting = 0;
-        currentNight = 2; //TODO change to the static value holder value
+        currentNight = StaticValueHolder.CurrentNight;
 
         //check which night it is and set the icons to follow the conversation
         switch (currentNight)
@@ -188,7 +190,7 @@ public class Dialogue : MonoBehaviour
                 chatting = 0;
                 endScene = true;
                 timer = 0;
-
+                StaticValueHolder.CurrentNight ++;
             }
         }
 
