@@ -34,6 +34,9 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	GameObject gameOverScreen;
 
+	bool bothCrossed = false;
+	public bool BothCrossed { get { return bothCrossed; } set { bothCrossed = value; } }
+
 	// Use this for initialization
 	void Start () {
 		cowCounterText.text = currentNoOfYaks + "/" + noOfYaksNeededToPass;
@@ -51,7 +54,7 @@ public class GameManager : MonoBehaviour {
 		cowCounterText.text = currentNoOfYaks + "/" + noOfYaksNeededToPass;
 		timerText.text = (int)timerTime + "";
 
-		if (currentNoOfYaks >= noOfYaksNeededToPass)
+		if (currentNoOfYaks >= noOfYaksNeededToPass && BothCrossed)
 		{
 			winScreen.SetActive(true);
 

@@ -9,6 +9,14 @@ public class FinishLineTrigger : MonoBehaviour {
 	[SerializeField]
 	GameObject endFollowObject;
 
+	[SerializeField]
+	GameObject father;
+	[SerializeField]
+	GameObject son;
+
+	bool sonCrossed = false;
+	bool fatherCrossed = false;
+
 	AudioManager am;
 
 	// Use this for initialization
@@ -18,7 +26,10 @@ public class FinishLineTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if (sonCrossed && fatherCrossed)
+		{
+			gm.BothCrossed = true;
+		}
 	}
 
 	private void OnTriggerEnter(Collider other)
@@ -29,6 +40,19 @@ public class FinishLineTrigger : MonoBehaviour {
 			other.gameObject.GetComponent<YakMovement>().Target = endFollowObject;
 			am.PlaySound("CowCounter");
 			gm.CurrentNoOfYaks++;
+		}
+
+		if (other.gameObject.tag == "Player")
+		{
+			if (other.gameObject == son)
+			{
+				sonCrossed = true;
+			}
+
+			if (other.gameObject == father)
+			{
+				fatherCrossed = true;
+			}
 		}
 	}
 }
