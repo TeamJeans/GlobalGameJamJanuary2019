@@ -64,19 +64,9 @@ public class PlayerController2 : MonoBehaviour {
 		{
 			// Calculate the direction the player is moving in
 			float yStore = moveDir.y;
-			moveDir = (transform.forward * Input.GetAxis("ProControllerRightJoystickVertical") * moveSpeed) + (transform.right * Input.GetAxis("ProControllerRightJoystickHorizontal") * moveSpeed);
+			moveDir = (transform.forward * Input.GetAxis("XboxRightJSVertical") * moveSpeed) + (transform.right * Input.GetAxis("XboxRightJSHorizontal") * moveSpeed);
 			moveDir = moveDir.normalized * moveSpeed;
 			moveDir.y = yStore;
-
-			// Jump
-			if (controller.isGrounded)
-			{
-				moveDir.y = 0;
-				if (Input.GetButtonDown("ProControllerX"))
-				{
-					moveDir.y = jumpForce;
-				}
-			}
 		}
 		else
 		{
@@ -90,7 +80,7 @@ public class PlayerController2 : MonoBehaviour {
 		controller.Move(moveDir * Time.deltaTime);
 
 		// Move the player in different directions depending on the camera's look direction
-		if (Input.GetAxis("ProControllerRightJoystickHorizontal") != 0 || Input.GetAxis("ProControllerRightJoystickVertical") != 0)
+		if (Input.GetAxis("XboxRightJSHorizontal") != 0 || Input.GetAxis("XboxRightJSVertical") != 0)
 		{
 			transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y, 0f);
 			Quaternion newRotation = Quaternion.LookRotation(new Vector3(-moveDir.x, 0f, -moveDir.z));
@@ -99,8 +89,8 @@ public class PlayerController2 : MonoBehaviour {
 
 		// Animation variables
 		//anim.SetBool("isGrounded", controller.isGrounded);
-		anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("ProControllerRightJoystickVertical"))) + (Mathf.Abs(Input.GetAxis("ProControllerRightJoystickHorizontal"))));
-		if ((Mathf.Abs(Input.GetAxis("ProControllerRightJoystickVertical"))) + (Mathf.Abs(Input.GetAxis("ProControllerRightJoystickHorizontal"))) > 0.1f)
+		anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("XboxRightJSVertical"))) + (Mathf.Abs(Input.GetAxis("XboxRightJSHorizontal"))));
+		if ((Mathf.Abs(Input.GetAxis("XboxRightJSVertical"))) + (Mathf.Abs(Input.GetAxis("XboxRightJSHorizontal"))) > 0.1f)
 		{
 			if (!soundPlaying)
 			{
@@ -115,9 +105,9 @@ public class PlayerController2 : MonoBehaviour {
 		}
 
 		// Using the pull mechanic
-		if (Input.GetButtonDown("ProControllerZR"))
+		if (Input.GetAxis("XboxRT") != 0)
 		{
-			Debug.Log("ZR Pressed!");
+			Debug.Log("RT Pressed!");
 			activatePullCommand();
 		}
 
@@ -131,9 +121,9 @@ public class PlayerController2 : MonoBehaviour {
 		}
 
 		// Using the push mechanic
-		if (Input.GetButtonDown("ProControllerR"))
+		if (Input.GetButtonDown("XboxRB"))
 		{
-			Debug.Log("R Pressed!");
+			Debug.Log("RB Pressed!");
 			activatePushCommand();
 		}
 
