@@ -21,10 +21,10 @@ public class MeatCooking : MonoBehaviour {
     void Update()
     {
         //get left and right from the joystick and rotate the bigMeat by that amount plus a multiplier
-        if (Input.GetAxis("ProControllerRightJoystickHorizontal") != 0)
+        if (Input.GetAxis("XboxRightJSHorizontal") != 0)
         {
-            transform.Rotate(Input.GetAxis("ProControllerRightJoystickHorizontal") * 50 * Time.deltaTime, 0, 0);
-            rotate += Input.GetAxis("ProControllerRightJoystickHorizontal") * Time.deltaTime;
+            transform.Rotate(0, 0, Input.GetAxis("XboxRightJSHorizontal") * 50 * Time.deltaTime);
+            rotate += Input.GetAxis("XboxRightJSHorizontal") * Time.deltaTime;
         }
         //Debug.Log("rotation" + rotate);
 

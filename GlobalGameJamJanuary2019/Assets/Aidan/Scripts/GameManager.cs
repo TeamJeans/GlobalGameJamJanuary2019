@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour {
 		cowCounterText.text = currentNoOfYaks + "/" + noOfYaksNeededToPass;
 		timerText.text = (int)timerTime + "";
 
-		if (currentNoOfYaks >= noOfYaksNeededToPass && BothCrossed)
+		if (currentNoOfYaks >= noOfYaksNeededToPass)
 		{
 			winScreen.SetActive(true);
 
