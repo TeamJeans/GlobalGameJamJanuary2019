@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 8d0ce24352dcdd34eb0e14dcdb423409
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box019
+    100002: Box020
+    100004: Box022
+    100006: CATRigHub006
+    100008: CATRigHub007
+    100010: CATRigHub007Bone001
+    100012: CATRigLArm1
+    100014: CATRigLArm2
+    100016: CATRigLArmCollarbone
+    100018: CATRigLArmPalm
+    100020: CATRigLLeg1
+    100022: CATRigLLeg2
+    100024: CATRigLLegAnkle
+    100026: CATRigLLegPlatform
+    100028: CATRigRArm1
+    100030: CATRigRArm2
+    100032: CATRigRArmCollarbone
+    100034: CATRigRArmPalm
+    100036: CATRigRLeg1
+    100038: CATRigRLeg2
+    100040: CATRigRLegAnkle
+    100042: CATRigRLegPlatform
+    100044: CATRigSpine1
+    100046: CATRigSpine2
+    100048: CATRigSpine3
+    100050: CATRigSpine4
+    100052: CATRigSpine5
+    100054: Character003
+    100056: Cylinder017
+    100058: Cylinder018
+    100060: Cylinder019
+    100062: Cylinder022
+    100064: //RootNode
+    400000: Box019
+    400002: Box020
+    400004: Box022
+    400006: CATRigHub006
+    400008: CATRigHub007
+    400010: CATRigHub007Bone001
+    400012: CATRigLArm1
+    400014: CATRigLArm2
+    400016: CATRigLArmCollarbone
+    400018: CATRigLArmPalm
+    400020: CATRigLLeg1
+    400022: CATRigLLeg2
+    400024: CATRigLLegAnkle
+    400026: CATRigLLegPlatform
+    400028: CATRigRArm1
+    400030: CATRigRArm2
+    400032: CATRigRArmCollarbone
+    400034: CATRigRArmPalm
+    400036: CATRigRLeg1
+    400038: CATRigRLeg2
+    400040: CATRigRLegAnkle
+    400042: CATRigRLegPlatform
+    400044: CATRigSpine1
+    400046: CATRigSpine2
+    400048: CATRigSpine3
+    400050: CATRigSpine4
+    400052: CATRigSpine5
+    400054: Character003
+    400056: Cylinder017
+    400058: Cylinder018
+    400060: Cylinder019
+    400062: Cylinder022
+    400064: //RootNode
+    2100000: 'Material #85'
+    2100002: 'Material #87'
+    2100004: 'Material #86'
+    2100006: 'Material #82'
+    2100008: 'Material #83'
+    2100010: 'Material #84'
+    2100012: 'Material #81'
+    4300000: Cylinder022
+    4300002: Box022
+    4300004: Box020
+    4300006: Cylinder017
+    4300008: Cylinder018
+    4300010: Cylinder019
+    4300012: Box019
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Box019
+    13700002: Box020
+    13700004: Box022
+    13700006: Cylinder017
+    13700008: Cylinder018
+    13700010: Cylinder019
+    13700012: Cylinder022
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

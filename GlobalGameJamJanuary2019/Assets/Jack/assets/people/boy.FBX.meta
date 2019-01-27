@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: fb955b5d67d1b974e80d617909182604
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: Box003
+    100006: Box007
+    100008: Box008
+    100010: Box009
+    100012: Box010
+    100014: Box011
+    100016: Box014
+    100018: Box015
+    100020: Box017
+    100022: Box018
+    100024: Box019
+    100026: Box020
+    100028: Box022
+    100030: Box023
+    100032: Box024
+    100034: Box025
+    100036: Box026
+    100038: Box027
+    100040: Box028
+    100042: Box029
+    100044: Box030
+    100046: Box031
+    100048: Box032
+    100050: Box033
+    100052: Box034
+    100054: Box035
+    100056: Box037
+    100058: Box038
+    100060: Box039
+    100062: Box040
+    100064: Box041
+    100066: Box042
+    100068: Box043
+    100070: Box044
+    100072: Box045
+    100074: Box046
+    100076: Box047
+    100078: Box048
+    100080: Box050
+    100082: //RootNode
+    100084: Camera001
+    100086: CATRigHub002
+    100088: CATRigHub003
+    100090: CATRigHub003Bone001
+    100092: CATRigHub003Bone001Bone001
+    100094: CATRigHub004
+    100096: CATRigHub005
+    100098: CATRigHub005Bone001
+    100100: CATRigHub006
+    100102: CATRigHub007
+    100104: CATRigHub007Bone001
+    100106: CATRigHub008
+    100108: CATRigHub009
+    100110: CATRigHub009Bone001
+    100112: CATRigHub009Bone001Bone001
+    100114: CATRigLArm1
+    100116: CATRigLArm1 1
+    100118: CATRigLArm1 2
+    100120: CATRigLArm1 3
+    100122: CATRigLArm2
+    100124: CATRigLArm2 1
+    100126: CATRigLArm2 2
+    100128: CATRigLArm2 3
+    100130: CATRigLArmCollarbone
+    100132: CATRigLArmCollarbone 1
+    100134: CATRigLArmCollarbone 2
+    100136: CATRigLArmCollarbone 3
+    100138: CATRigLArmDigit11
+    100140: CATRigLArmDigit11 1
+    100142: CATRigLArmPalm
+    100144: CATRigLArmPalm 1
+    100146: CATRigLArmPalm 2
+    100148: CATRigLArmPalm 3
+    100150: CATRigLLeg1
+    100152: CATRigLLeg1 1
+    100154: CATRigLLeg1 2
+    100156: CATRigLLeg1 3
+    100158: CATRigLLeg2
+    100160: CATRigLLeg2 1
+    100162: CATRigLLeg2 2
+    100164: CATRigLLeg2 3
+    100166: CATRigLLegAnkle
+    100168: CATRigLLegAnkle 1
+    100170: CATRigLLegAnkle 2
+    100172: CATRigLLegAnkle 3
+    100174: CATRigLLegPlatform
+    100176: CATRigLLegPlatform 1
+    100178: CATRigLLegPlatform 2
+    100180: CATRigLLegPlatform 3
+    100182: CATRigRArm1
+    100184: CATRigRArm1 1
+    100186: CATRigRArm1 2
+    100188: CATRigRArm1 3
+    100190: CATRigRArm2
+    100192: CATRigRArm2 1
+    100194: CATRigRArm2 2
+    100196: CATRigRArm2 3
+    100198: CATRigRArmCollarbone
+    100200: CATRigRArmCollarbone 1
+    100202: CATRigRArmCollarbone 2
+    100204: CATRigRArmCollarbone 3
+    100206: CATRigRArmDigit11
+    100208: CATRigRArmDigit11 1
+    100210: CATRigRArmPalm
+    100212: CATRigRArmPalm 1
+    100214: CATRigRArmPalm 2
+    100216: CATRigRArmPalm 3
+    100218: CATRigRLeg1
+    100220: CATRigRLeg1 1
+    100222: CATRigRLeg1 2
+    100224: CATRigRLeg1 3
+    100226: CATRigRLeg2
+    100228: CATRigRLeg2 1
+    100230: CATRigRLeg2 2
+    100232: CATRigRLeg2 3
+    100234: CATRigRLegAnkle
+    100236: CATRigRLegAnkle 1
+    100238: CATRigRLegAnkle 2
+    100240: CATRigRLegAnkle 3
+    100242: CATRigRLegPlatform
+    100244: CATRigRLegPlatform 1
+    100246: CATRigRLegPlatform 2
+    100248: CATRigRLegPlatform 3
+    100250: CATRigSpine1
+    100252: CATRigSpine1 1
+    100254: CATRigSpine1 2
+    100256: CATRigSpine1 3
+    100258: CATRigSpine2
+    100260: CATRigSpine2 1
+    100262: CATRigSpine2 2
+    100264: CATRigSpine2 3
+    100266: CATRigSpine3
+    100268: CATRigSpine3 1
+    100270: CATRigSpine3 2
+    100272: CATRigSpine3 3
+    100274: CATRigSpine4
+    100276: CATRigSpine4 1
+    100278: CATRigSpine4 2
+    100280: CATRigSpine4 3
+    100282: CATRigSpine5
+    100284: CATRigSpine5 1
+    100286: CATRigSpine5 2
+    100288: CATRigSpine5 3
+    100290: Character001
+    100292: Character002
+    100294: Character003
+    100296: Character004
+    100298: Cylinder001
+    100300: Cylinder012
+    100302: Cylinder014
+    100304: Cylinder015
+    100306: Cylinder016
+    100308: Cylinder017
+    100310: Cylinder018
+    100312: Cylinder019
+    100314: Cylinder022
+    100316: Cylinder023
+    100318: Cylinder024
+    100320: Object
+    100322: Plane001
+    100324: Plane002
+    100326: Plane003
+    100328: Plane004
+    100330: Plane005
+    100332: Plane006
+    100334: Plane007
+    100336: qBox008
+    100338: qBox009
+    100340: support braces
+    100342: support braces001
+    400000: Box001
+    400002: Box002
+    400004: Box003
+    400006: Box007
+    400008: Box008
+    400010: Box009
+    400012: Box010
+    400014: Box011
+    400016: Box014
+    400018: Box015
+    400020: Box017
+    400022: Box018
+    400024: Box019
+    400026: Box020
+    400028: Box022
+    400030: Box023
+    400032: Box024
+    400034: Box025
+    400036: Box026
+    400038: Box027
+    400040: Box028
+    400042: Box029
+    400044: Box030
+    400046: Box031
+    400048: Box032
+    400050: Box033
+    400052: Box034
+    400054: Box035
+    400056: Box037
+    400058: Box038
+    400060: Box039
+    400062: Box040
+    400064: Box041
+    400066: Box042
+    400068: Box043
+    400070: Box044
+    400072: Box045
+    400074: Box046
+    400076: Box047
+    400078: Box048
+    400080: Box050
+    400082: //RootNode
+    400084: Camera001
+    400086: CATRigHub002
+    400088: CATRigHub003
+    400090: CATRigHub003Bone001
+    400092: CATRigHub003Bone001Bone001
+    400094: CATRigHub004
+    400096: CATRigHub005
+    400098: CATRigHub005Bone001
+    400100: CATRigHub006
+    400102: CATRigHub007
+    400104: CATRigHub007Bone001
+    400106: CATRigHub008
+    400108: CATRigHub009
+    400110: CATRigHub009Bone001
+    400112: CATRigHub009Bone001Bone001
+    400114: CATRigLArm1
+    400116: CATRigLArm1 1
+    400118: CATRigLArm1 2
+    400120: CATRigLArm1 3
+    400122: CATRigLArm2
+    400124: CATRigLArm2 1
+    400126: CATRigLArm2 2
+    400128: CATRigLArm2 3
+    400130: CATRigLArmCollarbone
+    400132: CATRigLArmCollarbone 1
+    400134: CATRigLArmCollarbone 2
+    400136: CATRigLArmCollarbone 3
+    400138: CATRigLArmDigit11
+    400140: CATRigLArmDigit11 1
+    400142: CATRigLArmPalm
+    400144: CATRigLArmPalm 1
+    400146: CATRigLArmPalm 2
+    400148: CATRigLArmPalm 3
+    400150: CATRigLLeg1
+    400152: CATRigLLeg1 1
+    400154: CATRigLLeg1 2
+    400156: CATRigLLeg1 3
+    400158: CATRigLLeg2
+    400160: CATRigLLeg2 1
+    400162: CATRigLLeg2 2
+    400164: CATRigLLeg2 3
+    400166: CATRigLLegAnkle
+    400168: CATRigLLegAnkle 1
+    400170: CATRigLLegAnkle 2
+    400172: CATRigLLegAnkle 3
+    400174: CATRigLLegPlatform
+    400176: CATRigLLegPlatform 1
+    400178: CATRigLLegPlatform 2
+    400180: CATRigLLegPlatform 3
+    400182: CATRigRArm1
+    400184: CATRigRArm1 1
+    400186: CATRigRArm1 2
+    400188: CATRigRArm1 3
+    400190: CATRigRArm2
+    400192: CATRigRArm2 1
+    400194: CATRigRArm2 2
+    400196: CATRigRArm2 3
+    400198: CATRigRArmCollarbone
+    400200: CATRigRArmCollarbone 1
+    400202: CATRigRArmCollarbone 2
+    400204: CATRigRArmCollarbone 3
+    400206: CATRigRArmDigit11
+    400208: CATRigRArmDigit11 1
+    400210: CATRigRArmPalm
+    400212: CATRigRArmPalm 1
+    400214: CATRigRArmPalm 2
+    400216: CATRigRArmPalm 3
+    400218: CATRigRLeg1
+    400220: CATRigRLeg1 1
+    400222: CATRigRLeg1 2
+    400224: CATRigRLeg1 3
+    400226: CATRigRLeg2
+    400228: CATRigRLeg2 1
+    400230: CATRigRLeg2 2
+    400232: CATRigRLeg2 3
+    400234: CATRigRLegAnkle
+    400236: CATRigRLegAnkle 1
+    400238: CATRigRLegAnkle 2
+    400240: CATRigRLegAnkle 3
+    400242: CATRigRLegPlatform
+    400244: CATRigRLegPlatform 1
+    400246: CATRigRLegPlatform 2
+    400248: CATRigRLegPlatform 3
+    400250: CATRigSpine1
+    400252: CATRigSpine1 1
+    400254: CATRigSpine1 2
+    400256: CATRigSpine1 3
+    400258: CATRigSpine2
+    400260: CATRigSpine2 1
+    400262: CATRigSpine2 2
+    400264: CATRigSpine2 3
+    400266: CATRigSpine3
+    400268: CATRigSpine3 1
+    400270: CATRigSpine3 2
+    400272: CATRigSpine3 3
+    400274: CATRigSpine4
+    400276: CATRigSpine4 1
+    400278: CATRigSpine4 2
+    400280: CATRigSpine4 3
+    400282: CATRigSpine5
+    400284: CATRigSpine5 1
+    400286: CATRigSpine5 2
+    400288: CATRigSpine5 3
+    400290: Character001
+    400292: Character002
+    400294: Character003
+    400296: Character004
+    400298: Cylinder001
+    400300: Cylinder012
+    400302: Cylinder014
+    400304: Cylinder015
+    400306: Cylinder016
+    400308: Cylinder017
+    400310: Cylinder018
+    400312: Cylinder019
+    400314: Cylinder022
+    400316: Cylinder023
+    400318: Cylinder024
+    400320: Object
+    400322: Plane001
+    400324: Plane002
+    400326: Plane003
+    400328: Plane004
+    400330: Plane005
+    400332: Plane006
+    400334: Plane007
+    400336: qBox008
+    400338: qBox009
+    400340: support braces
+    400342: support braces001
+    2000000: Camera001
+    2100000: 'Material #85'
+    2100002: 'Material #87'
+    2100004: 'Material #86'
+    2100006: 'Material #82'
+    2100008: 'Material #83'
+    2100010: 'Material #84'
+    2100012: 'Material #81'
+    2100014: 'Material #113'
+    2100016: 'Material #115'
+    2100018: 'Material #109'
+    2100020: 'Material #114'
+    2100022: 'Material #108'
+    2100024: 'Material #110'
+    2100026: 'Material #80'
+    2100028: 'Material #67'
+    2100030: 'Material #65'
+    2100032: 'Material #66'
+    2100034: 'Material #63'
+    2100036: 'Material #64'
+    2100038: 'Material #62'
+    2100040: 'Material #70'
+    2100042: 'Material #68'
+    2100044: 'Material #55'
+    2100046: 02 - Default
+    2100048: 'Material #57'
+    2100050: 'Material #26'
+    2100052: 'Material #54'
+    2100054: 'Material #53'
+    2100056: No Name
+    2100058: 'Material #59'
+    2100060: 'Material #60'
+    2100062: 'Material #58'
+    2100064: 'Material #29'
+    2100066: 'Material #50'
+    2100068: 'Material #51'
+    2100070: 'Material #52'
+    2100072: 'Material #27'
+    2100074: 'Material #205'
+    2100076: 04 - Default
+    2100078: 'Material #78'
+    2100080: 'Material #71'
+    2100082: 'Material #116'
+    2100084: 'Material #74'
+    2100086: 'Material #72'
+    2100088: 'Material #107'
+    2100090: 'Material #75'
+    2100092: 'Material #73'
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Box007
+    2300008: Box008
+    2300010: Box009
+    2300012: Box010
+    2300014: Box011
+    2300016: Box014
+    2300018: Box047
+    2300020: Box048
+    2300022: Box050
+    2300024: Cylinder001
+    2300026: Cylinder012
+    2300028: Cylinder024
+    2300030: Object
+    2300032: Plane001
+    2300034: Plane002
+    2300036: Plane003
+    2300038: Plane004
+    2300040: Plane005
+    2300042: Plane006
+    2300044: Plane007
+    2300046: qBox008
+    2300048: qBox009
+    2300050: support braces
+    2300052: support braces001
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Box007
+    3300008: Box008
+    3300010: Box009
+    3300012: Box010
+    3300014: Box011
+    3300016: Box014
+    3300018: Box047
+    3300020: Box048
+    3300022: Box050
+    3300024: Cylinder001
+    3300026: Cylinder012
+    3300028: Cylinder024
+    3300030: Object
+    3300032: Plane001
+    3300034: Plane002
+    3300036: Plane003
+    3300038: Plane004
+    3300040: Plane005
+    3300042: Plane006
+    3300044: Plane007
+    3300046: qBox008
+    3300048: qBox009
+    3300050: support braces
+    3300052: support braces001
+    4300000: Cylinder022
+    4300002: Box022
+    4300004: Box020
+    4300006: Cylinder017
+    4300008: Cylinder018
+    4300010: Cylinder019
+    4300012: Box019
+    4300014: Box048
+    4300016: Cylinder023
+    4300018: Box015
+    4300020: Box017
+    4300022: Box018
+    4300024: Cylinder014
+    4300026: Cylinder015
+    4300028: Cylinder016
+    4300030: Box038
+    4300032: Box039
+    4300034: Box046
+    4300036: Box043
+    4300038: Box028
+    4300040: Box029
+    4300042: Box030
+    4300044: Box044
+    4300046: Box033
+    4300048: Box031
+    4300050: Box032
+    4300052: Box045
+    4300054: Box037
+    4300056: Cylinder001
+    4300058: support braces
+    4300060: Plane001
+    4300062: Object
+    4300064: Plane003
+    4300066: Plane004
+    4300068: support braces001
+    4300070: Cylinder012
+    4300072: Box008
+    4300074: Plane005
+    4300076: Box010
+    4300078: Box011
+    4300080: Box014
+    4300082: Plane007
+    4300084: Plane006
+    4300086: Box009
+    4300088: Plane002
+    4300090: Box002
+    4300092: Box001
+    4300094: Box003
+    4300096: Box007
+    4300098: Box047
+    4300100: Box050
+    4300102: Box027
+    4300104: Box025
+    4300106: Box042
+    4300108: Box041
+    4300110: Box040
+    4300112: Box026
+    4300114: Box034
+    4300116: Box035
+    4300118: Cylinder024
+    4300120: qBox008
+    4300122: qBox009
+    4300124: Box024
+    4300126: Box023
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Box015
+    13700002: Box017
+    13700004: Box018
+    13700006: Box019
+    13700008: Box020
+    13700010: Box022
+    13700012: Box023
+    13700014: Box024
+    13700016: Box025
+    13700018: Box026
+    13700020: Box027
+    13700022: Box028
+    13700024: Box029
+    13700026: Box030
+    13700028: Box031
+    13700030: Box032
+    13700032: Box033
+    13700034: Box034
+    13700036: Box035
+    13700038: Box037
+    13700040: Box038
+    13700042: Box039
+    13700044: Box040
+    13700046: Box041
+    13700048: Box042
+    13700050: Box043
+    13700052: Box044
+    13700054: Box045
+    13700056: Box046
+    13700058: Cylinder014
+    13700060: Cylinder015
+    13700062: Cylinder016
+    13700064: Cylinder017
+    13700066: Cylinder018
+    13700068: Cylinder019
+    13700070: Cylinder022
+    13700072: Cylinder023
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
