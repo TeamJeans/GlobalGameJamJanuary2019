@@ -1,70 +1,32 @@
 fileFormatVersion: 2
-guid: e2a4eb8ddbd30f74e89ecf7c59a2a557
+guid: 970ff77b397ba4748adec5846d931478
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCylinder1
-    100004: pCylinder2
-    100006: pCylinder3
-    100008: pSphere10
-    100010: pSphere11
-    100012: pSphere12
-    100014: pSphere3
-    100016: pSphere4
-    100018: pSphere5
-    100020: pSphere6
-    100022: pSphere7
-    100024: pSphere8
-    100026: pSphere9
-    100028: transform1
-    100030: transform10
-    100032: transform11
-    100034: transform12
-    100036: transform2
-    100038: transform3
-    100040: transform4
-    100042: transform5
-    100044: transform6
-    100046: transform7
-    100048: transform8
-    100050: transform9
+    100002: pCube16
+    100004: pCube6
+    100006: pCube7
+    100008: pCube8
+    100010: pCube9
+    100012: transform26
+    100014: transform27
+    100016: transform28
+    100018: transform29
     400000: //RootNode
-    400002: pCylinder1
-    400004: pCylinder2
-    400006: pCylinder3
-    400008: pSphere10
-    400010: pSphere11
-    400012: pSphere12
-    400014: pSphere3
-    400016: pSphere4
-    400018: pSphere5
-    400020: pSphere6
-    400022: pSphere7
-    400024: pSphere8
-    400026: pSphere9
-    400028: transform1
-    400030: transform10
-    400032: transform11
-    400034: transform12
-    400036: transform2
-    400038: transform3
-    400040: transform4
-    400042: transform5
-    400044: transform6
-    400046: transform7
-    400048: transform8
-    400050: transform9
-    2100000: lambert7
-    2100002: lambert6
-    2100004: lambert4
-    2100006: lambert1
-    2100008: lambert5
-    2100010: lambert2
-    2100012: lambert3
-    2300000: pSphere12
-    3300000: pSphere12
-    4300000: pSphere12
+    400002: pCube16
+    400004: pCube6
+    400006: pCube7
+    400008: pCube8
+    400010: pCube9
+    400012: transform26
+    400014: transform27
+    400016: transform28
+    400018: transform29
+    2100000: lambert13
+    2300000: pCube16
+    3300000: pCube16
+    4300000: pCube16
   externalObjects: {}
   materials:
     importMaterials: 1
