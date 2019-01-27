@@ -15,6 +15,7 @@ public class PuzzleButton : MonoBehaviour {
 	Animator gateAnim;
 
 	bool buttonState;
+	public bool ButtonState { get { return buttonState; } }
 
 	// Use this for initialization
 	void Start () {
