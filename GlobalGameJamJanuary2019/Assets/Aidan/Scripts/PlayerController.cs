@@ -35,12 +35,28 @@ public class PlayerController : MonoBehaviour {
 	float pushColliderActiveTime = 5.0f;
 	float pushColliderTimeCounter = 0f;
 
+	AudioManager am;
+	bool soundPlaying = false;
+
+	[SerializeField]
+	GameObject pullSpeechBubble;
+	[SerializeField]
+	GameObject pushSpeechBubble;
+	[SerializeField]
+	float speechBubbleTime = 1.0f;
+	float speechBubbleTimeCounter = 0;
+
 	// Use this for initialization
 	void Start ()
 	{
 		controller = GetComponent<CharacterController>();
 		pullCollider.enabled = false;
 		pushCollider.enabled = false;
+
+		pullSpeechBubble.SetActive(false);
+		pushSpeechBubble.SetActive(false);
+
+		am = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 	}
 	
 	// Update is called once per frame
@@ -86,6 +102,19 @@ public class PlayerController : MonoBehaviour {
 		// Animation variables
 		//anim.SetBool("isGrounded", controller.isGrounded);
 		anim.SetFloat("Speed", (Mathf.Abs(Input.GetAxis("Vertical"))) + (Mathf.Abs(Input.GetAxis("Horizontal"))));
+		if ((Mathf.Abs(Input.GetAxis("Vertical"))) + (Mathf.Abs(Input.GetAxis("Horizontal"))) > 0.1f)
+		{
+			if (!soundPlaying)
+			{
+				soundPlaying = true;
+				am.PlaySound("HorseSound");
+			}
+		}
+		else
+		{
+			soundPlaying = false;
+			am.StopSound("HorseSound");
+		}
 
 		// Using the pull mechanic
 		if (Input.GetButtonDown("ProControllerZL"))
@@ -118,6 +147,16 @@ public class PlayerController : MonoBehaviour {
 		{
 			pushColliderTimeCounter -= Time.deltaTime;
 		}
+
+		if (speechBubbleTimeCounter <= 0)
+		{
+			pullSpeechBubble.SetActive(false);
+			pushSpeechBubble.SetActive(false);
+		}
+		else
+		{
+			speechBubbleTimeCounter -= Time.deltaTime;
+		}
 	}
 
 	public void knockBack(Vector3 knockBackDir, float knockBackForce, float knockBackTime)
@@ -132,11 +171,21 @@ public class PlayerController : MonoBehaviour {
 	{
 		pullCollider.enabled = true;
 		pullColliderTimeCounter = pullColliderActiveTime;
+		am.PlaySound("BluePull");
+
+		speechBubbleTimeCounter = speechBubbleTime;
+		pullSpeechBubble.SetActive(true);
+		pushSpeechBubble.SetActive(false);
 	}
 
 	void activatePushCommand()
 	{
 		pushCollider.enabled = true;
 		pushColliderTimeCounter = pushColliderActiveTime;
+		am.PlaySound("BluePush");
+
+		speechBubbleTimeCounter = speechBubbleTime;
+		pullSpeechBubble.SetActive(false);
+		pushSpeechBubble.SetActive(true);
 	}
 }

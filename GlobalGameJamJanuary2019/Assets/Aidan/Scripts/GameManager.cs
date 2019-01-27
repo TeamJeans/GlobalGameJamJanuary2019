@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour {
 	[SerializeField]
 	float timeToDoLevel;
 
+	AudioManager am;
+
 	[SerializeField]
 	int noOfYaksTotal;
 	[SerializeField]
@@ -36,10 +38,16 @@ public class GameManager : MonoBehaviour {
 	void Start () {
 		cowCounterText.text = currentNoOfYaks + "/" + noOfYaksNeededToPass;
 		winScreen.SetActive(false);
+
+		am = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
+
+		am.PlaySound("DayMusic");
+		am.PlaySound("AmbientNoise");
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		cowCounterText.text = currentNoOfYaks + "/" + noOfYaksNeededToPass;
 		timerText.text = (int)timerTime + "";
 

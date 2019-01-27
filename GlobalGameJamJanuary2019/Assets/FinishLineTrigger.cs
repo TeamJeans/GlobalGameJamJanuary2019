@@ -9,9 +9,11 @@ public class FinishLineTrigger : MonoBehaviour {
 	[SerializeField]
 	GameObject endFollowObject;
 
+	AudioManager am;
+
 	// Use this for initialization
 	void Start () {
-		
+		am = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 	}
 	
 	// Update is called once per frame
@@ -25,6 +27,7 @@ public class FinishLineTrigger : MonoBehaviour {
 		{
 			Debug.Log("Cow has been added!");
 			other.gameObject.GetComponent<YakMovement>().Target = endFollowObject;
+			am.PlaySound("CowCounter");
 			gm.CurrentNoOfYaks++;
 		}
 	}

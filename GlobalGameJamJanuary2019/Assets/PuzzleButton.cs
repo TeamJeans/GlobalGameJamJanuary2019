@@ -14,12 +14,15 @@ public class PuzzleButton : MonoBehaviour {
 	[SerializeField]
 	Animator gateAnim;
 
+	AudioManager am;
+
 	bool buttonState;
 	public bool ButtonState { get { return buttonState; } }
 
 	// Use this for initialization
 	void Start () {
 		buttonState = false;
+		am = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>();
 	}
 	
 	// Update is called once per frame
@@ -31,6 +34,7 @@ public class PuzzleButton : MonoBehaviour {
 	{
 		if (other.gameObject.tag == "Player")
 		{
+			am.PlaySound("ButtonSound");
 			buttonState = true;
 			meshRenderer.material = buttonOnMaterial;
 		}
